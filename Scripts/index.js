@@ -6,23 +6,23 @@ function determineHand(cards){
 
 function getHandRankingValue(hand){
     switch(hand) {
-        case "HC":
+        case "HC":      // High Card
             return 0
-        case "1P":
+        case "1P":      // 1 Pair
             return 1
-        case "2P":
+        case "2P":      // 2 Pair
             return 2
-        case "3K":
+        case "3K":      // 3 of a Kind
             return 3
-        case "S":
+        case "S":       // Straight
             return 4
-        case "F":
+        case "F":       // Flush
             return 5
-        case "FH":
+        case "FH":      // Full House
             return 6
-        case "4K":
+        case "4K":      // 4 of a Kind
             return 7
-        case "SF":
+        case "SF":      // Straight Flush
             return 8
     }
 }
@@ -39,6 +39,10 @@ function handIsFourOfAKind(cards){
             return true;
     }
     return false
+}
+
+function handIsStraight(cards){
+    
 }
 
 function handIsStraightFlush(cards){
